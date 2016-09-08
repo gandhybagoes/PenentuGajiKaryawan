@@ -37,9 +37,10 @@
         android:text="Tahun Lahir" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerTahun"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:entries="@array/tahun" />
 
     <Button
         android:id="@+id/buttonOK"
