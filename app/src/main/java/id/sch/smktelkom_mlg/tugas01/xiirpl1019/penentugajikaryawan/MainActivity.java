@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button btOK;
     TextView tvHasil;
     Spinner spTahun, spJabatan;
+    RadioButton rbM, rbBM, rbD, rbJ;
 
 
 
@@ -33,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
         btOK = (Button) findViewById(R.id.buttonOK);
         spTahun = (Spinner) findViewById(R.id.spinnerTahun);
         spJabatan = (Spinner) findViewById(R.id.spinnerJabatan);
+        rbM = (RadioButton) findViewById(R.id.radioButtonM);
+        rbBM = (RadioButton) findViewById(R.id.radioButtonBM);
+        rbD = (RadioButton) findViewById(R.id.radioButtonD);
+        rbJ = (RadioButton) findViewById(R.id.radioButtonJ);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
 
         /*btOK.setOnClickListener(new View.OnClickListener() {
@@ -61,33 +67,66 @@ public class MainActivity extends AppCompatActivity {
         int tahun = Integer.parseInt(spTahun.getSelectedItem().toString());
         int usia = 2016 - tahun;
 
-        String gaji = "";
+        int gaji1 = 0;
         if (spJabatan.getSelectedItem().toString().equals("Customer Service"))
         {
-            gaji = "2.000.000";
+            gaji1 = 2000000;
         }
         else if (spJabatan.getSelectedItem().toString().equals("Technical Support"))
         {
-            gaji = "2.500.000";
+            gaji1 = 2500000;
         }
         else if (spJabatan.getSelectedItem().toString().equals("Web Programmer"))
         {
-            gaji = "4.000.000";
+            gaji1 = 4000000;
         }
         else if (spJabatan.getSelectedItem().toString().equals("Finance and Accounting Officer"))
         {
-            gaji = "3.000.000";
+            gaji1 = 3000000;
         }
         else if (spJabatan.getSelectedItem().toString().equals("Sales and Marketing Officer"))
         {
-            gaji = "2.800.000";
+            gaji1 = 2800000;
         }
         else
         {
-            gaji = "3.500.000";
+            gaji1 = 3500000;
         }
 
-        tvHasil.setText("Nama anda : " + nama + "\nAnda lahir tahun : "+ spTahun.getSelectedItem().toString() +"\nUmur Anda " + usia
-        + "\nGaji :" + gaji);
+        int gaji2 = 0;
+        String status = null;
+        String ket = null;
+        if (rbM.isChecked())
+        {
+            gaji2 = 500000;
+            status = rbM.getText().toString();
+            ket = " Anda mendapat gaji tambahan ";
+        }
+        else if (rbBM.isChecked())
+        {
+            status = rbBM.getText().toString();
+            ket = " Anda mendapat gaji tambahan ";
+        }
+        else if (rbD.isChecked())
+        {
+            gaji2 = 200000;
+            status = rbD.getText().toString();
+            ket = " Anda mendapat gaji tambahan ";
+        }
+        else if (rbJ.isChecked())
+        {
+            gaji2 = 200000;
+            status = rbJ.getText().toString();
+            ket = " Anda mendapat gaji tambahan ";
+        }
+
+        int total = gaji1+gaji2;
+
+        tvHasil.setText("Nama anda : " + nama +
+                "\nAnda lahir tahun : "+ spTahun.getSelectedItem().toString() +
+                "\nUmur Anda " + usia +
+                "\nGaji 1 :" + String.valueOf(gaji1) +
+                "\nStatus Anda " + status + ket + String.valueOf(gaji2) +
+                "\nTotal Gaji : " + String.valueOf(total));
     }
 }
