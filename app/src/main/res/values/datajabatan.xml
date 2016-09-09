@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="jabatan">
+        <item>Customer Service</item>
+        <item>Technical Support</item>
+        <item>Web Programmer</item>
+        <item>Finance and Accounting Officer</item>
+        <item>Sales and Marketing Officer</item>
+        <item>HRD Officer</item>
+    </string-array>
+
+</resources>
+
