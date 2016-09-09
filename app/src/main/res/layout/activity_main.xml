@@ -54,17 +54,19 @@
                 android:entries="@array/jabatan"
                 android:id="@+id/spinnerJabatan" />
 
-            <RadioGroup
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/textView3" />
+
+    <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status"
-                    android:id="@+id/textView3" />
-
-                <RadioButton
+        <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Menikah"
@@ -93,7 +95,48 @@
                     android:checked="false" />
             </RadioGroup>
 
-            <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendidikan yang sudah ditempuh"
+        android:id="@+id/textView4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SD"
+        android:id="@+id/checkBoxSD"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMP"
+        android:id="@+id/checkBoxSMP"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMA / SMK"
+        android:id="@+id/checkBoxSMA"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D3"
+        android:id="@+id/checkBoxD"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S1"
+        android:id="@+id/checkBoxS"
+        android:checked="false" />
+
+    <Button
                 android:id="@+id/buttonOK"
                 style="@style/Base.TextAppearance.AppCompat.Title"
                 android:layout_width="match_parent"
