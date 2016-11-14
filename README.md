@@ -5,13 +5,11 @@ Jika nama tidak diisi maka akan tidak bisa di SUBMIT, namun jika nama diisi teta
 Gaji pokok didapat berdasarkan pilihan Jabatan Pekerjaanya, untuk mendapatkan gaji tambahan harus mengisi status, namun untuk status "Belum Menikah" tidak mendapatkan gaji tambahan.
 
 ##Screenshot Aplikasi
-![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/ss1.PNG)
+![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/1.PNG)
 
-![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/ss2.PNG)
+![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/2.PNG)
 
-![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/ss3.PNG)
-
-![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/ss5.png)
+![Screenshot](https://github.com/gandhybagoes/PenentuGajiKaryawan/blob/master/3.PNG)
 
 ##Link APK (Google Drive)
 [https://drive.google.com/file/d/0B1ZZb-sMGdP5amJ5ZEdUamFqdTA/view](https://drive.google.com/file/d/0B1ZZb-sMGdP5amJ5ZEdUamFqdTA/view)
